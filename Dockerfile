@@ -28,7 +28,7 @@ RUN python3 -m pip install 'torch>=1.3.0'
 RUN python3 -m pip install 'torchvision>=0.4.1'
 RUN python3 -m pip install 'tqdm>=4.36.1'
 RUN python3 -m pip install 'open3d>=0.8.0.0'
-RUN cd /root && git clone git@github.com:Shreeyak/cleargrasp.git
+RUN cd /root && git clone https://github.com/Shreeyak/cleargrasp.git
 RUN cd /root/cleargrasp
 WORKDIR /root/cleargrasp
 # RUN python3 -m pip install -r requirements.txt
