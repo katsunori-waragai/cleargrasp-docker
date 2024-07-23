@@ -1,8 +1,9 @@
 FROM nvcr.io/nvidia/l4t-pytorch:r35.2.1-pth2.0-py3
-RUN apt-get install libhdf5-10 libhdf5-serial-dev libhdf5-dev libhdf5-cpp-11
+RUN apt-get update
+# RUN apt-get install libhdf5-10 libhdf5-serial-dev libhdf5-dev libhdf5-cpp-11
+RUN apt-get install -y libhdf5-serial-dev libhdf5-dev
 RUN apt install libopenexr-dev zlib1g-dev openexr
-RUN apt install xorg-dev  # display widows
-RUN apt install libglfw3-dev
+# RUN apt install libglfw3-dev
 
 RUN python3 -m pip install matplotlib opencv-python torch torchaudio torchvision wandb
 RUN python3 -m pip install 'numpy<2' 
