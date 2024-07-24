@@ -30,7 +30,10 @@ s/python /python3 /
 sample_dataset
 ../data/cleargrasp-dataset-test-val/real-test
 
-# cehk if GPU is used
+python3 eval_depth_completion.py -c config/config.yaml
+
+
+# check if GPU is used
 jtop
  
 in most time GPU is not in use.
