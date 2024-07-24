@@ -26,6 +26,15 @@ USER_CFLAGS=-DRN_USE_CSPARSE "/usr/include/hdf5/serial/"
 s#x86_64#aarch64#
 s/python /python3 /
 
+
+sample_dataset
+../data/cleargrasp-dataset-test-val/real-test
+
+# cehk if GPU is used
+jtop
+ 
+in most time GPU is not in use.
+
 ## SEE ALSO
 
 https://automationtarou.hatenablog.com/entry/2023/01/22/210346
