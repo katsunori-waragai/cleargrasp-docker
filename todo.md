@@ -12,3 +12,12 @@ $ grep x86 $(find . -name "Make*" -print)
 ./api/depth2depth/gaps/apps/depth2depth/Makefile:#USER_LIBS = -L/usr/lib/x86_64-linux-gnu/ -lhdf5_serial
 ./api/depth2depth/gaps/apps/depth2depth/Makefile:#USER_CFLAGS=-DRN_USE_CSPARSE /usr/lib/x86_64-linux-gnu/
 
+
+-------------------------
+実行結果が何なのかをわかりやすくすること
+
+-------------------------
+
+実行時間が日単位に遅いのをなんとかすること
+C++のコードがGPUを使っていないように見える。
+
