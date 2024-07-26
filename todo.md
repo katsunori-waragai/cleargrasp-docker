@@ -1,3 +1,5 @@
+# todo 
+
 元のrepository はx86_64 のアーキテクチャを前提としている。
 そのため、Jetson で動作させるときには以下の改訂をすること。
 
@@ -12,6 +14,11 @@ $ grep x86 $(find . -name "Make*" -print)
 ./api/depth2depth/gaps/apps/depth2depth/Makefile:#USER_LIBS = -L/usr/lib/x86_64-linux-gnu/ -lhdf5_serial
 ./api/depth2depth/gaps/apps/depth2depth/Makefile:#USER_CFLAGS=-DRN_USE_CSPARSE /usr/lib/x86_64-linux-gnu/
 
+
+## 動作確認状況
+python3 eval_depth_completion.py -c config/config.yaml
+の動作を確認した。
+Jetson AGX Orin で 数日単位で実行時間がかかった。
 
 -------------------------
 実行結果が何なのかをわかりやすくすること
